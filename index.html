@@ -4,7 +4,7 @@
 
   <head>
 
-    <title>AirCav</title>
+    <title>Local Host</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -31,7 +31,7 @@
 
         background-color: grey;
 
-        height: 700px;
+        height: 600px;
 
         background-position: 0px 0px, 8px 8px, 0px 1px, 8px 9px; 
 
@@ -113,13 +113,14 @@
         color: white;
       }   
 
-      .navbar .create-profile {
+      .navbar .create-service-profile {
         float: right;
       }
 
       .button-list {
         text-align: center;
         margin-top: 50px;
+        font-size: 70px;
       }
 
 
@@ -131,11 +132,11 @@
     
       <div id="main">
 
-      <img src="https://res.cloudinary.com/drkwmw3zy/image/upload/v1680747191/LocalHost_w04wox.png">
+      <img src="https://res.cloudinary.com/drkwmw3zy/image/upload/v1680747191/LocalHost_w04wox.png" onclick="location.reload();">
 
             <div class="navbar">
-        <a class="active" href="#contact-us">Contact Us</a>
-        <a class="create-profile" href="#create-service-profile">Create Service Profile</a>
+        <a class="active" href="#contact-us" onclick="displayAlert()">Contact Us</a>
+        <a class="create-service-profile" href="create-service-profile.html">Create Service Profile</a>
       </div>
 
         <div class="button-list">
@@ -162,5 +163,10 @@
 
 </html>
 
+<script>
+function displayAlert() {
+  alert("071 866 4014 / 083 262 4014 / fortune.kemele7@gmail.com");
+}
+</script>
 
 
