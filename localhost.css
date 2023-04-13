@@ -1,65 +1,70 @@
 body {
+
   background-color: rgb(48, 48, 48);
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
-#footer {
+footer {
+
   background-color: green;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   height: 100px;
   width: 100%;
   margin-top: auto;
+  padding-top: 40px;
+
 }
 
-  img {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    width: 230px;
-    float: left;
-  }
+img {
+
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  width: 250px;
+  float: left;
+
+}
 
 h1 {
+
   font-size: 70px;
   text-align: center;
   color: darkgreen;
+
 }
 
 .navbar {
+
   background-color: green;
   background-size: cover;
   background-position: center;
   height: 300px;
   overflow: hidden;
   position: relative;
+
 }
 
 .navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 35px;
-}
 
-.navbar .create-service-profile {
   float: right;
-  font-size: 35px;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 50px;
+  margin-top: 50px;
   text-decoration: none;
+  font-size: 45px;
+
 }
 
 .card {
+
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -67,20 +72,21 @@ h1 {
   max-width: 300px;
   padding: 20px;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
+
 }
 
 .card h2 {
-  margin-top: 0;
-}
 
-.card p {
-  font-size: 20px;
+  margin-top: 0;
+
 }
 
 .cards {
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
