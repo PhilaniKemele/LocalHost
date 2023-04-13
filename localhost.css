@@ -46,12 +46,12 @@ h1 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .navbar .create-service-profile {
   float: right;
-  font-size: 50px;
+  font-size: 35px;
   display: block;
   color: #f2f2f2;
   text-align: center;
