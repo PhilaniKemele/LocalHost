@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="LoginForm.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <form>
+                <label for="username">username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" id="login-button"></button>
+            </form>
+    
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+<script>
+
+    const form = document.querySelector('form');
+
+    const usernameInput = document.querySelector('#username');
+
+    const passwordInput = document.querySelector('#password');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+
+        if (username === 'example' && password === 'password') {
+            alert('Login successful!');
+        } else {
+            alert('Incorrect username or password. Please try again.');pp
+        }
+    })
+</script>

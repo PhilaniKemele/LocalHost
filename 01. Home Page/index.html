@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Local Host</title>
+
+    <link rel="stylesheet" href="localhost.css">
+
+  </head>
+
+  <body>
+      <div class="navbar">
+        <a class="active" href="#contact-us" onclick="openPopup()">Request for Hosting</a>
+
+      <img src="https://ik.imagekit.io/philani/Trees.jpg?updatedAt=1681007967445"> 
+
+    </div>      
+
+    <div class="cards">
+
+      <div class="card">
+        <h2>Grasscutting</h2>
+      </div>
+
+      <div class="card">
+        <h2>Tuck Shops</h2>
+      </div>
+
+      <div class="card">
+        <h2>Salons</h2>
+      </div>
+
+      <div class="card">
+        <h2>Car Services</h2>
+      </div>
+
+      <div class="card">
+        <h2>Electricians</h2>
+      </div>
+
+      <div class="card">
+        <h2>Builders</h2>
+      </div>
+
+      <div class="card">
+        <h2>Hardwares</h2>
+      </div>
+
+      <div class="card">
+        <h2>Plumbers</h2>
+      </div>
+
+      <div class="card">
+        <h2>Internet Cafe's</h2>
+      </div>
+      
+      <div class="card">
+        <h2>Transport</h2>
+      </div>
+      
+      <div class="card">
+        <h2>Domestic Workers</h2>
+      </div>
+      
+      <div class="card">
+        <h2>Software Developers</h2>
+      </div>
+
+      <div class="card">
+        <h2>Electronic Repairs</h2>
+      </div>
+
+      <div class="card">
+        <h2>Music Studios</h2>
+      </div>            
+
+      <div class="card">
+        <h2>Fast Food</h2>
+      </div>
+
+      <div class="card">
+        <h2>Photography</h2>
+      </div>
+      
+      <div class="card">
+        <h2>Videography</h2>
+      </div>
+
+      <div class="card">
+        <h2>Graphic Design</h2>
+      </div>      
+      
+      <div class="card">
+        <h2>Schools</h2>
+      </div>
+
+      <div class="card">
+        <h2>Day Care Centre's</h2>
+      </div>
+      
+      <div class="card">
+        <h2>Yard Work</h2>
+      </div>       
+                          
+
+    </div>
+
+ <!-- Popup box content -->
+ <div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Request for Hosting</h2>
+    <p>Please enter your details below:</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone"><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>   
+    
+  </div>
+</div>
+
+  </body>
+
+  <footer>
+    © Local Host 2023
+  </footer>  
+
+</html>
+
+<script>
+  // Open the popup box
+  function openPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+
+  // Close the popup box
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+</script>
