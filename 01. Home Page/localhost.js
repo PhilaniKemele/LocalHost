@@ -1,5 +1,7 @@
-function displayAlert() {
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+}
 
-    alert("071 866 4014 / 083 262 4014 / AirCav@gmail.com");
-
-  }
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
