@@ -74,7 +74,9 @@ h1 {
     text-align: center;
     font-size: 35px;
     height: 300px;
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
 .card h2 {
@@ -139,5 +141,22 @@ h1 {
   cursor: pointer;
 
   }
+
+a[href="#top"] {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a[href="#top"]:hover {
+  background-color: #555;
+}
+
 
   
