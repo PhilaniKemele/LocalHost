@@ -158,5 +158,12 @@ a[href="#top"]:hover {
   background-color: #555;
 }
 
-
+ul li a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
   
