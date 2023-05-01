@@ -13,12 +13,10 @@ footer {
 
   background-color: green;
   text-align: center;
-  font-size: 40px;
-  height: 100px;
-  width: 100%;
-  margin-top: auto;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  font-size: 30px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 
   }
 
@@ -36,7 +34,7 @@ h1 {
 
   font-size: 70px;
   text-align: center;
-  color: darkgreen;
+  color: white;
 
   }
 
@@ -60,39 +58,46 @@ h1 {
   padding: 50px;
   margin-top: 50px;
   text-decoration: none;
-  font-size: 45px;
+  font-size: 50px;
 
   }
 
-  .card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    margin: 20px auto;
-    max-width: 300px;
-    padding: 20px;
-    text-align: center;
-    font-size: 35px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.card {
+
+  background-color: rgb(195, 248, 195);
+  border: 10px solid green;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(105, 241, 0, 0.3);
+  margin: 20px auto;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
 
 .card h2 {
 
   margin-top: 0;
+  text-align: center;
+  padding-top: 30px;
+  color: black
 
   }
 
-  .cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+.cards {
 
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
 @media screen and (max-width: 768px) {
   .cards {
     flex-direction: column;
@@ -115,7 +120,7 @@ h1 {
 
 .popup-content {
 
-  background-color: #fefefe;
+  background-color: rgb(195, 248, 195);
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -124,11 +129,38 @@ h1 {
 
   }
 
+.popup-content h2 {
+
+  font-size: 40px;
+
+}  
+
+.popup-content p {
+
+  font-size: 25px;
+
+}
+
+textarea {
+
+  width: 100%;
+  height: 100%;
+
+}
+
+input {
+
+  width: 15%;
+  height: 100%;
+  font-size: 20px;
+
+}
+
 .close {
 
-  color: #aaa;
+  color: red;
   float: right;
-  font-size: 28px;
+  font-size: 50px;
   font-weight: bold;
 
   }
@@ -145,10 +177,10 @@ h1 {
 a[href="#top"] {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   font-size: 18px;
-  background-color: #333;
-  color: white;
+  background-color: rgb(195, 248, 195);
+  color: black;
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
@@ -158,12 +190,31 @@ a[href="#top"]:hover {
   background-color: #555;
 }
 
+a[href="index.html"] {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  background-color: rgb(195, 248, 195);
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a[href="index.html"]:hover {
+  background-color: #555;
+}
+
 ul li a {
   display: inline-block;
   padding: 10px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: rgb(195, 248, 195);
+  color: black;
   text-decoration: none;
   border-radius: 5px;
+  font-style: italic;
+  font-size: 30px;
+
 }
   
