@@ -14,10 +14,8 @@ form.addEventListener('submit', (e) => {
 
   e.preventDefault();
 
-  // Get form data
   const formData = new FormData(form);
 
-  // Send form data to Formspree
   fetch(form.action, {
     method: 'POST',
     headers: {
@@ -25,15 +23,16 @@ form.addEventListener('submit', (e) => {
     },
     body: formData
   })
-  .then(response => {
-    // Handle successful form submission
-    alert('Thank you for your submission!');
+
+  .then(response => { 
+    alert('Thank you for your Submission!');
     form.reset();
   })
+
   .catch(error => {
-    // Handle form submission error
-    alert('There was an error submitting your form. Please try again later.');
+    alert('There was an error submitting your request. Please try again later.');
   });
+
 });
 
 function openAboutUs() {
@@ -43,4 +42,6 @@ function openAboutUs() {
 function closeAboutUs() {
   document.getElementById("aboutUsPopup").style.display = "none";
 }
+
+// AirCav
 
