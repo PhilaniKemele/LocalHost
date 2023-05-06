@@ -6,35 +6,64 @@
 
     <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Local Host</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="localhost.css">
 
     <link rel="icon" href="Tress.png" type="image/x-icon">
 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
   </head>
 
   <body>
 
-    <div class="navbar">
+    <div class="menubar">
 
-      <a class="active" href="#request" title="Request for Hosting" onclick="openPopup()"><em>Request for Hosting</em></a>
 
       <!-- <img src="https://ik.imagekit.io/philani/Trees.jpg?updatedAt=1681007967445"> -->
 
-      <img src="Tress.png" alt="Local Host Logo" title="Click to Refresh" loading="lazy">
+      <a href="javascript:location.reload(true)">
+
+      <img src="Tress.png" alt="Local Host Logo" title="Click to Refresh" loading="lazy" class="logo">
+
+      </a>
+
+      <ul class="list">
+
+        <li class="list-items" title="Home" style="color: whitesmoke"><a href="javascript:location.reload(true)"><em>HOME</em></a></li>
+        <li class="list-items" title="Request for Hosting" onclick="openPopup()"><em>REQUEST FOR HOSTING</em></li>
+        <li class="list-items" title="Download" style="color: whitesmoke"><a href="T&C's_Local_Host.pdf" download><em>T&amp;C's</em></a></li>
+        <li class="list-items" title="About Us" onclick="openAboutUs()"><em>ABOUT US</em></li>
+
+      </ul>
 
       </div>
-
-      <ul>
-        <li><a href="Tress.png" title="Download" download> Local Host T&C's PDF</a></li>
-      </ul>
 
       <div class="cards">
 
         <a href="tuck_shops.html" title="Tuck Shops">
         <div class="card">
           <h2>Tuck Shops</h2>
+          </div></a>
+
+        <a href="salons.html" title="Tuck Shops">
+        <div class="card">
+          <h2>Salons</h2>
+          </div></a>
+
+        <a href="fast_food.html" title="Tuck Shops">
+        <div class="card">
+          <h2>Fast Food</h2>
+          </div></a>
+
+        <a href="grasscutting.html" title="Tuck Shops">
+        <div class="card">
+          <h2>Grasscutting</h2>
           </div></a>
 
 
@@ -70,11 +99,11 @@
 
             <p>Please enter all relevant details regarding the Service you provide that you would like to see hosted on the website in the Text Area down below:</p>
 
-            <form>
+            <form id="myForm" action="https://formspree.io/f/mayzvvqg" method="POST">
 
               <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter details here"></textarea><br><br>
 
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit" onclick="successful()">
 
               </form>
 
@@ -82,6 +111,26 @@
 
               </div>
               </div>
+
+              <div id="aboutUsPopup" class="popup">
+
+                <div class="popup-content">
+              
+                  <span class="close" onclick="closeAboutUs()">&times;</span>
+              
+                  <h2>About Us</h2>
+              
+                  <p>Local Host is a website that provides a hosting service for fellow services Township-wide. Our mission is to make it easy for anyone to get details about a service online, regardless of technical expertise or budget. We believe that the internet should be accessible to everyone, and we're proud to be a part of making that a reality.</p>
+
+                  <p>Our team is made up of experienced professionals who are dedicated to providing the best possible service to our clients. We're passionate about the website that we've developed and it's only going to get better as time goes by. Expect a lot of innovation. We're always looking for ways to improve our offerings and make people's lives easier and better.</p>
+
+                  <p>Thank you for considering Local Host. We look forward to helping you get what you need!</p>
+
+                  <b><h3><b>AirCav.</h3></b>
+              
+                </div>
+              
+              </div>              
 
               </body>
 

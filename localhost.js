@@ -5,3 +5,42 @@ function openPopup() {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+
+const form = document.querySelector('#myForm');
+
+form.addEventListener('submit', (e) => {
+
+  popup.style.display = "none";
+
+  e.preventDefault();
+
+  // Get form data
+  const formData = new FormData(form);
+
+  // Send form data to Formspree
+  fetch(form.action, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json'
+    },
+    body: formData
+  })
+  .then(response => {
+    // Handle successful form submission
+    alert('Thank you for your submission!');
+    form.reset();
+  })
+  .catch(error => {
+    // Handle form submission error
+    alert('There was an error submitting your form. Please try again later.');
+  });
+});
+
+function openAboutUs() {
+  document.getElementById("aboutUsPopup").style.display = "block";
+}
+
+function closeAboutUs() {
+  document.getElementById("aboutUsPopup").style.display = "none";
+}
+
