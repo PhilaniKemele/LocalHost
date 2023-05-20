@@ -32,10 +32,10 @@ footer {
 
   background-color: green;
   text-align: center;
-  font-size: 30px;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  font-size: 10px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
 }
 
@@ -310,6 +310,47 @@ input[type="submit"] {
     display: block;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  /* Adjustments for screens with a maximum width of 767px (mobile devices) */
+  body {
+    font-size: 14px;
+  }
+
+  .menubar {
+    height: 20vh;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .list {
+    width: 70%;
+    margin-left: 0;
+    padding-right: 0;
+    justify-content: space-around;
+  }
+
+  .list-items {
+    font-size: 1em;
+  }
+
+  .cards {
+    margin-top: 10px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .popup-content {
+    margin: 5% auto;
+    padding: 10px;
+    width: 90%;
+  }
+}
+
 
 
   
