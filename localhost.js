@@ -45,12 +45,16 @@ function closeAboutUs() {
 
 // AirCav
 
-// Close the navigation menu when a menu item is clicked
-document.querySelectorAll('.list-items').forEach(item => {
-  item.addEventListener('click', () => {
-    document.getElementById('menu-toggle').checked = false;
+document.addEventListener('DOMContentLoaded', function() {
+  var menuToggle = document.querySelector('.menu-icon');
+  var sideMenu = document.querySelector('.side-menu');
+
+  menuToggle.addEventListener('click', function() {
+    sideMenu.classList.toggle('active');
   });
 });
+
+
 
 
 
