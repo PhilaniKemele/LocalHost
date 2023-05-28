@@ -45,14 +45,16 @@ function closeAboutUs() {
 
 // AirCav
 
-document.addEventListener('DOMContentLoaded', function() {
-  var menuToggle = document.querySelector('.menu-icon');
-  var sideMenu = document.querySelector('.side-menu');
+const menuToggle = document.querySelector('.menu-toggle');
+const sidebar = document.querySelector('.sidebar');
 
-  menuToggle.addEventListener('click', function() {
-    sideMenu.classList.toggle('active');
-  });
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('is-active');
+  sidebar.classList.toggle('open');
 });
+
+
+
 
 
 
