@@ -53,6 +53,29 @@ menuToggle.addEventListener('click', () => {
   sidebar.classList.toggle('open');
 });
 
+window.addEventListener('scroll', function() {
+  var button = document.querySelector('.back-to-top');
+  var footer = document.querySelector('footer');
+  var footerOffset = footer.offsetTop;
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > footerOffset) {
+    button.style.left = '20px'; /* Added this line to maintain the left position */
+    button.style.bottom = (scrollTop + window.innerHeight - footerOffset + 20) + 'px';
+  } else {
+    button.style.left = '20px'; /* Added this line to maintain the left position */
+    button.style.bottom = '20px';
+  }
+
+  if (scrollTop > 900) {
+    button.classList.add('show');
+  } else {
+    button.classList.remove('show');
+  }
+});
+
+
+
 
 
 

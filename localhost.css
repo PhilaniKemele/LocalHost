@@ -30,6 +30,8 @@ ul {
 
 footer {
 
+  position: relative;
+  z-index: 1;
   background-color: green;
   text-align: center;
   font-size: 10px;
@@ -215,21 +217,29 @@ input {
 
   }
 
-a[href="#top"] {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  font-size: 18px;
-  background-color: rgb(195, 248, 195);
-  color: black;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-}
 
-a[href="#top"]:hover {
-  background-color: #555;
-}
+  a.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+    background-color: rgb(195, 248, 195);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  a.back-to-top.show {
+    opacity: 1;
+  }
+  
+  a.back-to-top:hover {
+    background-color: #555;
+  }
 
 a[href="index.html"] {
   position: fixed;
@@ -385,4 +395,132 @@ a[href="index.html"]:hover {
   .menu-item a:hover {
     color: black;
   }
+
+  footer {
+    font-size: 15px;
+  }
+
+  .card {
+
+    background-color: rgb(195, 248, 195);
+    border: 10px solid green;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(105, 241, 0, 0.3);
+    margin: 20px auto;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  
+  .card h2 {
+  
+    margin-top: 0;
+    text-align: center;
+    padding-top: 30px;
+    color: black
+  
+    }
+  
+  .cards {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .card-list {
+  
+    background-color: rgb(195, 248, 195);
+    border: 10px solid green;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(105, 241, 0, 0.3);
+    margin: 20px auto;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  
+  .popup {
+  
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  
+    }
+  
+  .popup-content {
+  
+    background-color: rgb(195, 248, 195);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  
+    }
+  
+  .popup-content h2 {
+  
+    font-size: 40px;
+  
+  }  
+  
+  .popup-content p {
+  
+    font-size: 25px;
+  
+  }
+  
+  textarea {
+  
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  input {
+  
+    width: 15%;
+    height: 100%;
+    font-size: 20px;
+  
+  }
+  
+  .close {
+  
+    color: red;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  
+    }
+  
+  .close:hover,
+  .close:focus {
+  
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  
+    }
 }
