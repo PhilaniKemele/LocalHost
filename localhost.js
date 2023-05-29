@@ -6,6 +6,8 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 
+// AirCav
+
 const form = document.querySelector('#myForm');
 
 form.addEventListener('submit', (e) => {
@@ -53,6 +55,8 @@ menuToggle.addEventListener('click', () => {
   sidebar.classList.toggle('open');
 });
 
+// AirCav
+
 window.addEventListener('scroll', function() {
   var button = document.querySelector('.back-to-top');
   var footer = document.querySelector('footer');
@@ -60,10 +64,10 @@ window.addEventListener('scroll', function() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollTop > footerOffset) {
-    button.style.left = '20px'; /* Added this line to maintain the left position */
+    button.style.left = '20px';
     button.style.bottom = (scrollTop + window.innerHeight - footerOffset + 20) + 'px';
   } else {
-    button.style.left = '20px'; /* Added this line to maintain the left position */
+    button.style.left = '20px';
     button.style.bottom = '20px';
   }
 
