@@ -341,7 +341,7 @@ a[href="index.html"]:hover {
     align-items: center;
     height: 30vh;
     overflow: hidden;
-    z-index: 999;
+    z-index: 1;
   }
 
 
@@ -394,10 +394,6 @@ a[href="index.html"]:hover {
 
   .menu-item a:hover {
     color: black;
-  }
-
-  footer {
-    font-size: 15px;
   }
 
   .card {
@@ -455,7 +451,6 @@ a[href="index.html"]:hover {
   }
   
   .popup {
-  
     display: none;
     position: fixed;
     z-index: 1;
@@ -465,29 +460,26 @@ a[href="index.html"]:hover {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
-  
-    }
+  }
   
   .popup-content {
-  
     background-color: rgb(195, 248, 195);
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 600px;
-  
-    }
+    max-width: 300px;
+  }
   
   .popup-content h2 {
   
-    font-size: 40px;
+    font-size: 30px;
   
   }  
   
   .popup-content p {
   
-    font-size: 25px;
+    font-size: 17px;
   
   }
   
@@ -502,7 +494,7 @@ a[href="index.html"]:hover {
   
     width: 15%;
     height: 100%;
-    font-size: 20px;
+    font-size: 10px;
   
   }
   
