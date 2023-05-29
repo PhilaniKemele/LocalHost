@@ -249,23 +249,22 @@ a[href="index.html"]:hover {
 
 @media only screen and (max-width: 767px) {
 
-/* Add this CSS to integrate the side menu */
-.app {
-  display: flex;
-  min-height: 100vh;
-}
+  .app {
+    display: flex;
+    min-height: 100vh;
+  }
 
-.sidebar {
-  flex: 1 1 0;
-  max-width: 200px;
-  padding: 2rem 1rem;
-  background-color: rgb(0, 96, 19);
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  position: fixed; /* Added position */
-  top: 30vh; /* Added top value */
-  bottom: 0; /* Added bottom value */
-}
+  .sidebar {
+    flex: 1 1 0;
+    max-width: 300px;
+    padding: 2rem 1rem;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 30vh;
+    bottom: 0;
+  }
 
 
   .sidebar.open {
@@ -275,125 +274,115 @@ a[href="index.html"]:hover {
     height: 100vh;
   }
 
-.sidebar h3 {
-  color: black;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
-}
+  .sidebar h3 {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+  }
 
-.sidebar .menu {
-  margin: 0 -1rem;
-}
+  .sidebar .menu {
+    margin: 0 -1rem;
+  }
 
-.sidebar .menu .menu-item {
-  display: block;
-  padding: 1em;
-  color: black;
-  text-decoration: none;
-  transition: 0.2s linear;
-}
+  .sidebar .menu .menu-item {
+    display: block;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s linear;
+  }
 
-.sidebar .menu .menu-item:hover,
-.sidebar .menu .menu-item.is-active {
-  color: #3bba9c;
-  border-right: 5px solid #3bba9c;
-}
+  .sidebar .menu .menu-item:hover,
+  .sidebar .menu .menu-item.is-active {
+    color: green;
+    border-right: 5px solid green;
+  }
 
-.content {
-  flex: 1 1 0;
-  padding: 2rem;
-}
+  .content {
+    flex: 1 1 0;
+    padding: 2rem;
+  }
 
-.content h1 {
-  color: black;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 999;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
 
-.content p {
-  color: black;
-}
-
-.menu-toggle {
-  display: block;
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-  z-index: 999;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
-  border-radius: 99px;
-  background-color: #2e3047;
-  cursor: pointer;
-}
-
-.menubar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: green;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 30vh;
-  overflow: hidden;
-  z-index: 999; /* Updated z-index */
-}
+  .menubar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: green;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    overflow: hidden;
+    z-index: 999;
+  }
 
 
-.hamburger {
-  position: relative;
-  top: calc(50% - 2px);
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 32px;
-}
+  .hamburger {
+    position: relative;
+    top: calc(50% - 2px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+  }
 
-.hamburger > span,
-.hamburger > span::before,
-.hamburger > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 99px;
-  background-color: #ffffff;
-  transition-duration: .25s;
-}
+  .hamburger > span,
+  .hamburger > span::before,
+  .hamburger > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 99px;
+    background-color: green;
+    transition-duration: .25s;
+  }
 
-.hamburger > span::before {
-  content: '';
-  top: -8px;
-}
+  .hamburger > span::before {
+    content: '';
+    top: -8px;
+  }
 
-.hamburger > span::after {
-  content: '';
-  top: 8px;
-}
+  .hamburger > span::after {
+    content: '';
+    top: 8px;
+  }
 
-.menu-toggle.is-active .hamburger > span {
-  transform: rotate(45deg);
-}
-.menu-toggle.is-active .hamburger > span::before {
-  top: 0;
-  transform: rotate(0deg);
-}
-.menu-toggle.is-active .hamburger > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
+  .menu-toggle.is-active .hamburger > span {
+    transform: rotate(45deg);
+  }
+  .menu-toggle.is-active .hamburger > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  .menu-toggle.is-active .hamburger > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
 
-.menu-item a {
-  text-decoration: none;
-  color: rgb(227, 0, 0);
-}
+  .menu-item a {
+    text-decoration: none;
+    color: black;
+  }
 
-.menu-item a:hover {
-  color: black;
-}
+  .menu-item a:hover {
+    color: black;
+  }
 }
