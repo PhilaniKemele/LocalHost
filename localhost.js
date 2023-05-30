@@ -49,11 +49,19 @@ function closeAboutUs() {
 
 const menuToggle = document.querySelector('.menu-toggle');
 const sidebar = document.querySelector('.sidebar');
+const body = document.body;
 
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('is-active');
   sidebar.classList.toggle('open');
+  
+  if (sidebar.classList.contains('open')) {
+    body.classList.add('sidebar-open');
+  } else {
+    body.classList.remove('sidebar-open');
+  }
 });
+
 
 // AirCav
 
