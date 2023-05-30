@@ -30,8 +30,6 @@ ul {
 
 footer {
 
-  position: relative;
-  z-index: 1;
   background-color: green;
   text-align: center;
   font-size: 10px;
@@ -49,19 +47,29 @@ h1 {
 
 }
 
-.menubar {
-
+.menu {
   background-color: green;
   background-size: cover;
   background-position: center;
   display: flex;
+  font-size: 30px;
   justify-content: space-between;
   align-items: center;
   height: 30vh;
   overflow: hidden;
   position: relative;
-
+  cursor: pointer;
 }
+
+.menu .menu-item {
+  padding: 0 20px;
+  color: black;
+}
+
+.menu .menu-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 
 .logo {
 
@@ -87,7 +95,7 @@ h1 {
 
 }
 
-.list a:hover {
+.list a: hover {
 
   color: black;
 
@@ -158,6 +166,7 @@ h1 {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
 
   }
 
@@ -208,8 +217,8 @@ input {
 
   }
 
-.close:hover,
-.close:focus {
+.close: hover,
+.close: focus {
 
   color: black;
   text-decoration: none;
@@ -396,6 +405,20 @@ a[href="index.html"]:hover {
     color: black;
   }
 
+  .menu {
+
+    background-color: green;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    overflow: hidden;
+    position: relative;
+  
+  }
+
   .card {
 
     background-color: rgb(195, 248, 195);
@@ -447,6 +470,14 @@ a[href="index.html"]:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  
+  }
+
+  .logo {
+
+    padding-left: 2em;
+    width: 100px;
+    float: left;
   
   }
   

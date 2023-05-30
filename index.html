@@ -22,45 +22,30 @@
 
   <body>
 
-    <div class="container">
-
-    <div class="menubar">
-
+    <nav class="menu">
+      <a href="javascript:location.reload(true)">
+        <img src="Tress.png" alt="Local Host Logo" title="Click to Refresh" loading="lazy" class="logo">
+      </a>
 
       <!-- <img src="https://ik.imagekit.io/philani/Trees.jpg?updatedAt=1681007967445"> -->
 
-      <a href="javascript:location.reload(true)">
-
-      <img src="Tress.png" alt="Local Host Logo" title="Click to Refresh" loading="lazy" class="logo">
-
-      </a>
-
-      </div>
-      </div>
-
-      <div class="app">
-
-        <div class="menu-toggle">
-          <div class="hamburger">
-            <span></span>
-          </div>
+      <a href="javascript:void(0)" class="menu-toggle">
+        <div class="hamburger">
+          <span></span>
         </div>
+      </a>
+    
+    <div class="app">
+      <aside class="sidebar">
+        <nav class="menu">
+          <a href="javascript:location.reload(true)" class="menu-item" title="Home" style="color: black"><em>HOME</em></a>
+          <a href="#" class="menu-item" title="Request for Hosting" onclick="openPopup()"><em>REQUEST FOR HOSTING</em></a>
+          <a href="T&C's_Local_Host.pdf" download class="menu-item" title="Download" style="color: black"><em>T&amp;C's</em></a>
+          <a href="#" class="menu-item" title="About Us" onclick="openAboutUs()"><em>ABOUT US</em></a>
+        </nav>
+      </aside>
 
-        <aside class="sidebar">
-
-          <h3>Menu</h3>
-
-          <nav class="menu">
-
-            <a href="javascript:location.reload(true)" class="menu-item" title="Home" style="color: black"><em>HOME</em></a>
-            <a href="#" class="menu-item" title="Request for Hosting" onclick="openPopup()"><em>REQUEST FOR HOSTING</em></a>
-            <a href="T&C's_Local_Host.pdf" download class="menu-item" title="Download" style="color: black"><em>T&amp;C's</em></a>
-            <a href="#" class="menu-item" title="About Us" onclick="openAboutUs()"><em>ABOUT US</em></a>
-
-
-          </nav>
-
-        </aside>
+    </nav>
 
       </div>
 
