@@ -286,7 +286,7 @@ a[href="index.html"]:hover {
     overflow-y: auto;
     position: fixed;
     left: -4px;
-    top: 20vh;
+    top: 30vh;
     bottom: 0;
   }
 
@@ -412,7 +412,9 @@ a[href="index.html"]:hover {
     display: flex;
     flex-direction: column;
     color: black;
-    font-size: 10px;
+    font-size: 20px;
+    height: 50vh;
+    background-color: white;
   }
 
   .sidebar .menu .menu-item {
