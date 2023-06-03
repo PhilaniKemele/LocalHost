@@ -476,7 +476,7 @@ a[href="index.html"]:hover {
     overflow-y: auto;
     position: fixed;
     left: -4px;
-    top: 19vh;
+    top: 18vh;
     bottom: 0;
   }
 
@@ -489,7 +489,7 @@ a[href="index.html"]:hover {
 
   .sidebar h3 {
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 0.5em;
   }
@@ -609,7 +609,7 @@ a[href="index.html"]:hover {
     display: flex;
     flex-direction: column;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     height: 50vh;
     background-color: white;
     padding: 1em;
@@ -682,7 +682,7 @@ a[href="index.html"]:hover {
   .logo {
 
     padding-left: 1em;
-    width: 170px;
+    width: 165px;
     float: left;
   
   }
