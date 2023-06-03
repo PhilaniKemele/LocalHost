@@ -778,18 +778,103 @@ a[href="index.html"]:hover {
     a[href="index.html"]:hover {
       background-color: #555;
     }
+
+    .welcome-message {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #3b3b3b;
+    }
+    
+    .welcome-message h1 {
+      font-size: 35px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    
+    .welcome-message p {
+      font-size: 18px;
+      color: #000000;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .welcome-message a {
+      color: green;
+      font-weight: bold;
+      font-size: 30px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .welcome-message a:hover {
+      color: #e64c4c;
+    }
     
     footer {
-      flex-shrink: 0;
-      height: 120px;
+      background-color: green;
+      padding: 20px;
+      text-align: center;
     }
     
-    footer ul {
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .footer-logo img {
+      width: 123px;
+      height: auto;
+    }
+    
+    .footer-social {
+      flex: 1;
+      max-width: 200px;
+      margin: 0 20px;
+      font-size: 30px;
+    }
+    
+    .footer-social h3 {
+      margin-bottom: 10px;
+      font-size: 23px;
+    }
+    
+    .social-media {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .social-media li {
+      margin: 0 5px;
+    }
+    
+    .social-media a {
+      color: #333;
+    }
+    
+    .footer-contact ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      font-size: 23px;
+    }
+    
+    .footer-contact li {
+      margin-bottom: 5px;
+    }
+    
+    .footer-contact a {
+      color: #333;
+      text-decoration: none;
+    }
+    
+    p {
+      margin-top: 10px;
       font-size: 17px;
-    }
-    
-    footer p {
-      font-size: 10px;
     }
     
 }
