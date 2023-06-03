@@ -88,6 +88,14 @@ window.addEventListener('scroll', function() {
 
 // AirCav
 
+const searchIcon = document.querySelector('.search-icon');
+const searchForm = document.querySelector('.search-form');
+
+searchIcon.addEventListener('click', () => {
+  searchForm.classList.toggle('show');
+});
+
+
 
 
 

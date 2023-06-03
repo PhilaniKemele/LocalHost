@@ -429,7 +429,37 @@ a[href="index.html"]:hover {
   }
 
   .search-container input[type="text"] {
-    width: 150px;
+    width: 0;
+  }
+
+  .search-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 18px;
+    background-color: #ccc;
+    margin-top: -10px;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .search-container button:hover {
+    background-color: #555;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .menu-toggle {
+    display: none;
   }
 
   body.sidebar-open {
@@ -495,8 +525,9 @@ a[href="index.html"]:hover {
     transform: translateY(-50%);
     width: 60px;
     height: 60px;
+    margin-bottom: -50px;
     border-radius: 99px;
-    background-color: #ffffff;
+    background-color: white;
     cursor: pointer;
   }
 
@@ -540,11 +571,13 @@ a[href="index.html"]:hover {
   .hamburger > span::before {
     content: '';
     top: -8px;
+    background-color: black;
   }
 
   .hamburger > span::after {
     content: '';
     top: 8px;
+    background-color: black;
   }
 
   .menu-toggle.is-active .hamburger > span {
@@ -648,8 +681,8 @@ a[href="index.html"]:hover {
 
   .logo {
 
-    padding-left: 2em;
-    width: 100px;
+    padding-left: 1em;
+    width: 170px;
     float: left;
   
   }
