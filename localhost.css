@@ -810,6 +810,23 @@ a[href="index.html"]:hover {
     .welcome-message a:hover {
       color: #e64c4c;
     }
+
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: green;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 12px;
+      cursor: pointer;
+      animation: bounce 1s infinite;
+    }
     
     footer {
       background-color: green;
