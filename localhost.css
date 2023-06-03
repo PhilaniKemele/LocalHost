@@ -429,16 +429,17 @@ a[href="index.html"]:hover {
   }
 
   .search-container input[type="text"] {
+    display: none;
     width: 0;
   }
 
   .search-container button {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -25px;
+    right: 30px;
     padding: 18px;
     background-color: #ccc;
-    margin-top: -10px;
+ 
     border: none;
     border-radius: 3px;
     color: black;
@@ -520,12 +521,12 @@ a[href="index.html"]:hover {
   .menu-toggle {
     display: block;
     top: 2rem;
-    right: 2rem;
     z-index: 999;
     transform: translateY(-50%);
     width: 60px;
     height: 60px;
     margin-bottom: -50px;
+    margin-left: -30px;
     border-radius: 99px;
     background-color: white;
     cursor: pointer;
