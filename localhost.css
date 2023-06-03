@@ -469,7 +469,7 @@ a[href="index.html"]:hover {
 
   .sidebar {
     flex: 1 1 0;
-    width: 350px;
+    width: 300px;
     padding: 2rem 1rem;
     background-color: rgb(255, 255, 255);
     transform: translateX(-100%);
@@ -610,7 +610,7 @@ a[href="index.html"]:hover {
     display: flex;
     flex-direction: column;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     height: 50vh;
     background-color: white;
     padding: 1em;
