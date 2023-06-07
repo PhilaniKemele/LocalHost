@@ -610,7 +610,7 @@ a[href="index.html"]:hover {
     overflow-y: auto;
     position: fixed;
     left: -4px;
-    top: 18vh;
+    top: 70vh;
     bottom: 0;
   }
 
@@ -1111,7 +1111,7 @@ a[href="index.html"]:hover {
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
-  margin-left: 50px;
+  margin-left: 45px;
   width: 200px;
 }
 
@@ -1184,7 +1184,7 @@ a[href="index.html"]:hover {
   height: 60px;
   background-color: green;
   border-radius: 50%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   color: white;
