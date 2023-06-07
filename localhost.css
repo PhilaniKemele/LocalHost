@@ -1138,7 +1138,7 @@ a[href="index.html"]:hover {
 }
 
 .welcome-message h1 {
-  font-size: 40px;
+  font-size: 25px;
   color: darkgreen;
   margin-top: -10px;
 }
@@ -1149,7 +1149,7 @@ a[href="index.html"]:hover {
 }
 
 .welcome-message p {
-  font-size: 18px;
+  font-size: 15px;
   color: green;
   margin-bottom: 10px;
   font-weight: bold;
