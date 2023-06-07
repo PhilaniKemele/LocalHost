@@ -563,8 +563,8 @@ a[href="index.html"]:hover {
     border: none;
     border-radius: 4px;
     outline: none;
-    font-size: 14px;
-    width: 100px;
+    font-size: 10px;
+    width: 70px;
   }
   
   .search-container button {
