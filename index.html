@@ -28,12 +28,12 @@
       </a>
 
       <div class="search-container">
-        <form action="your-search-url" method="GET">
-          <input type="text" placeholder="Search..." name="search">
+        <form action="#" method="GET" onsubmit="performSearch(event)">
+          <input type="text" placeholder="Search..." name="search" id="search-input">
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-      </div>
-
+      </div>  
+      
       <!-- <img src="https://ik.imagekit.io/philani/Trees.jpg?updatedAt=1681007967445"> -->
 
       <a href="javascript:void(0)" class="menu-toggle">
@@ -62,16 +62,20 @@
 
         <p>We provide a reliable and affordable hosting service for various types of services Township-wide. Whether you're a tuck shop, salon, fast food restaurant, or any other local business, we can help you establish an online presence.</p>
         <p>Our mission is to make it easy for anyone to find information about your services online, regardless of technical expertise or budget. We believe in supporting local businesses and connecting them with the community.</p>
-        <p>Explore our website and discover the diverse range of services available. If you're interested in hosting your service with us, don't hesitate to <br><a href="#" title="Request for Hosting" onclick="openPopup()">Request for Hosting</br></a></p>
+        <p>Explore our website and discover the diverse range of services available. If you're interested in hosting your service with us, don't hesitate to</p>
+          
+          <br><a href="#" title="Request for Hosting" onclick="openPopup()">Request for Hosting</a></br></p>
 
         </div>
 
-        <div class="chatbot">
+        <div id="chatAIPopup" onclick="openChatAI()">
 
           Chat A.I
 
           </div>
 
+          <div class="cards-container">
+          <div class="scroll-button scroll-left">&lt;</div>
           <div class="cards">
 
             <a href="tuck_shops.html" title="Tuck Shops">
@@ -115,6 +119,8 @@
               <h2>Graphic Design</h2>
               </div></a>
           
+              </div>
+              <div class="scroll-button scroll-right">&gt;</div>
               </div>
 
               <div id="popup" class="popup">
@@ -163,6 +169,58 @@
                         </div>
               
                         </div>
+
+                        <div id="blog-section">
+                          <h2>Local Host News</h2>
+                        
+                          <article class="blog-post">
+                            <h3 class="blog-title">How to Register Your Business in South Africa</h3>
+                            <p class="blog-date" style="color: green">June 7, 2023</p>
+                            <p class="blog-author" style="color: green">By Philani Kemele</p>
+                            <p class="blog-excerpt">
+
+                              Starting a business can be an exciting venture, and if you're a South African citizen with an entrepreneurial spirit, it's essential to understand the process of registering your business. Registering your business not only gives it a legal identity but also provides you with the necessary protection and benefits that come with formal recognition. <br>
+                              <br>
+                              <b>1. Determine Your Business Structure:</b> <br>
+                              <br>
+                              The first step in registering your business in South Africa is to determine its legal structure. There are several options to choose from, including sole proprietorship, partnership, private company, and public company. Each structure has its own legal and financial implications, so it's important to understand the characteristics and requirements of each before making a decision. Consulting with a legal professional or business advisor can be beneficial in helping you choose the structure that best suits your business goals and circumstances. <br>
+                              <br>
+                              <b>2. Choose a Business Name:</b> <br>
+                              <br>
+                              Once you have decided on the structure, the next step is to choose a unique and memorable name for your business. Conduct a thorough search to ensure that the name you select is not already in use by another registered business. The Companies and Intellectual Property Commission (CIPC) provides an online name search facility where you can check the availability of your chosen business name. It's also important to consider trademark registrations and domain name availability to protect your brand identity. <br>
+                              <br>
+                              <b>3. Register with the CIPC:</b> <br>
+                              <br>
+                              The Companies and Intellectual Property Commission (CIPC) is the regulatory body responsible for the registration of businesses in South Africa. To register your business, you need to submit the necessary documents and complete the registration process with the CIPC. The required documents may vary depending on the type of business structure you choose, but generally include identification documents, proof of address, memorandum of incorporation (for companies), and a completed application form. It's advisable to seek professional assistance or consult the CIPC website for detailed information on the registration requirements and process. <br>
+                              <br>
+                              Registering your business in South Africa is a crucial step towards establishing a legal and recognized entity. It provides you with the necessary protections, benefits, and access to various resources and opportunities. Remember, registering your business is just the beginning; it's your passion, determination, and commitment that will drive your business forward. Good luck on your entrepreneurial journey!</p>
+                              
+                          </article>
+                        
+                          <article class="blog-post">
+                            <h3 class="blog-title">The Importance of Local Businesses</h3>
+                            <p class="blog-date" style="color: green">June 7, 2023</p>
+                            <p class="blog-author" style="color: green">By Philani Kemele</p>
+                            <p class="blog-excerpt">South Africa, a country rich in diverse cultures and landscapes, thrives on the contributions of its local businesses. From bustling marketplaces to quaint storefronts, these enterprises play a crucial role in the economic and social fabric of the nation. Recognizing and supporting local businesses in South Africa holds immense significance as they contribute to job creation, community development, cultural preservation, and environmental sustainability.<br>
+                            <br>
+                            1. Economic Growth and Job Creation:<br>
+                            <br>
+                            Local businesses in South Africa are key drivers of economic growth and job creation. They provide employment opportunities, particularly for marginalized communities and individuals with limited formal education. By offering local residents a chance to earn a living, these businesses help reduce unemployment rates, alleviate poverty, and empower individuals to contribute to their families' well-being. Furthermore, the money earned by employees of local businesses circulates within the community, stimulating further economic activity and supporting other local enterprises.<br>
+                            <br>
+                            2. Community Development and Empowerment:<br>
+                            <br>
+                            Community development and empowerment act as catalysts for social and economic progress, particularly in historically disadvantaged areas. These businesses often provide training, mentorship, and entrepreneurial opportunities to individuals who may have limited access to formal education or resources. By nurturing local talent and supporting local entrepreneurs, these businesses empower individuals to build sustainable livelihoods and contribute to the growth and development of their communities. Furthermore, local businesses often reinvest their profits back into the community through initiatives such as scholarships, sponsorships, and donations, further strengthening the social fabric of the community.<br>
+                            <br>
+                            3. Environmental Sustainability and Responsible Consumption:<br>
+                            <br>
+                            This aligns with environmental sustainability and responsible consumption. These businesses often prioritize sustainable practices, such as sourcing locally produced goods, reducing packaging waste, and implementing eco-friendly initiatives. By promoting local sourcing, they help reduce the carbon footprint associated with long-distance transportation and support local farmers and producers. Additionally, local businesses often adopt practices that minimize waste, encourage recycling, and promote conscious consumption, contributing to a more sustainable and resilient South Africa.<br>
+                            <br>
+                            In conclusion, local businesses in South Africa are essential pillars of economic, social, and cultural development. They provide employment opportunities, preserve cultural heritage, foster community empowerment, and promote sustainable practices. Supporting and patronizing these businesses not only contributes to the growth and well-being of local communities but also helps build a stronger and more inclusive South Africa. As consumers, we have the power to make a positive impact by consciously choosing to support local businesses and recognizing their immense importance in shaping the fabric of our society.
+                            
+                            </p>
+                          </article>
+                        
+                        </div>              
             
                         <p>
 
@@ -172,8 +230,7 @@
              
                           <footer>
                             <div class="footer-container">
-                              <div class="footer-logo">
-                                <img src="AirCav.jpg" title="AirCav" alt="AirCav Logo">
+                              <div class="footer-logo1">
                                 <img src="Tress.png" title="Local Host" alt="Local Host Logo">
                                 <img src="scanner.jpg" title="Scan QR Code to visit website" alt="QR Code">
 
@@ -187,17 +244,23 @@
                                   <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                                 </ul>
                               </div>
+                              
                             </div>
+                          </div>
+                            
                             <div class="footer-contact">
                               <ul>
-                                <li>Contact us at <a href="mailto:fortune.kemele7@gmail.com">our email address</a></li>
+                                <li>Contact us at <a href="mailto:aircav23@gmail.com">our email address</a></li>
                                 <li>Dial <a href="tel:+27615534417">our mobile line</a></li>
                               </ul>
+                            </div>
+
+                            <div class="footer-logo">
+                              <img src="AirCav Green.jpg" title="AirCav" alt="AirCav Logo">
                             </div>
                             <p>&copy; Local Host 2023</p>
                           </footer>
                           
-
                               </body>
              
                               </html>

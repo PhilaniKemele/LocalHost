@@ -95,16 +95,69 @@ searchIcon.addEventListener('click', () => {
   searchForm.classList.toggle('show');
 });
 
+// AirCav
 
+function performSearch(event) {
+  event.preventDefault();
 
+  var searchInput = document.getElementById("search-input");
+  var searchTerm = searchInput.value.trim().toLowerCase();
 
+  var cards = document.querySelectorAll(".cards .card");
 
+  for (var i = 0; i < cards.length; i++) {
+    var card = cards[i];
+    var title = card.querySelector("h2").innerText.toLowerCase();
 
+    if (title.includes(searchTerm)) {
+      card.style.display = ""; 
+    } else {
+      card.style.display = "none"; 
+    }
+  }
 
+  searchInput.value = "";
+}
 
+// AirCav
 
+document.addEventListener("DOMContentLoaded", function () {
+  const cardsContainer = document.querySelector(".cards-container");
+  const cards = document.querySelector(".cards");
+  const scrollLeftBtn = document.querySelector(".scroll-left");
+  const scrollRightBtn = document.querySelector(".scroll-right");
 
+  scrollLeftBtn.addEventListener("click", function () {
+    cardsContainer.scrollBy({
+      left: -300, 
+      behavior: "smooth",
+    });
+  });
 
+  scrollRightBtn.addEventListener("click", function () {
+    cardsContainer.scrollBy({
+      left: 300, 
+      behavior: "smooth",
+    });
+  });
 
+  cardsContainer.addEventListener("scroll", function () {
+    scrollLeftBtn.style.display =
+      cardsContainer.scrollLeft === 0 ? "none" : "flex";
+    scrollRightBtn.style.display =
+      cardsContainer.scrollLeft + cardsContainer.clientWidth >=
+      cardsContainer.scrollWidth
+        ? "none"
+        : "flex";
+  });
+});
 
+// AirCav
 
+function openChatAI() {
+  document.getElementById("chatAIPopup").style.display = "block";
+}
+
+function closeChatAI() {
+  document.getElementById("chatAIPopup").style.display = "none";
+}
