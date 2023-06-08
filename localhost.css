@@ -29,69 +29,100 @@ ul {
 }
 
 footer {
+
   background-color: green;
   padding: 20px;
   text-align: center;
+
 }
 
 .footer-container {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+
+}
+
+.footer-logo1 img {
+
+  width: 200px;
+  height: auto;
+
 }
 
 .footer-logo img {
+
   width: 200px;
   height: auto;
+
 }
 
 .footer-social {
+
   flex: 1;
   max-width: 200px;
   margin: 0 20px;
   font-size: 30px;
+
 }
 
 .footer-social h3 {
+
   margin-bottom: 10px;
+
 }
 
 .social-media {
+
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
+
 }
 
 .social-media li {
+
   margin: 0 5px;
+
 }
 
 .social-media a {
+
   color: #333;
+
 }
 
 .footer-contact ul {
+
   list-style-type: none;
   padding: 0;
   margin: 0;
   font-size: 30px;
+
 }
 
 .footer-contact li {
+
   margin-bottom: 5px;
+
 }
 
 .footer-contact a {
+
   color: #333;
   text-decoration: none;
+
 }
 
 p {
+
   margin-top: 10px;
   font-size: 23px;
+
 }
 
 h1 {
@@ -103,6 +134,7 @@ h1 {
 }
 
 .menu {
+
   background-color: green;
   background-size: cover;
   background-position: center;
@@ -114,15 +146,20 @@ h1 {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+
 }
 
 .menu .menu-item {
+
   padding: 0 20px;
   color: black;
+
 }
 
 .menu .menu-item:not(:last-child) {
+
   margin-right: 10px;
+
 }
 
 
@@ -135,20 +172,25 @@ h1 {
 }
 
 .search-container {
+
   position: relative;
   margin-left: 100px;
+
 }
 
 .search-container input[type="text"] {
+
   padding: 10px 10px;
   border: none;
   border-radius: 4px;
   outline: none;
   font-size: 14px;
   width: 210px;
+
 }
 
 .search-container button {
+
   position: absolute;
   top: 0;
   right: 0;
@@ -159,10 +201,13 @@ h1 {
   color: white;
   cursor: pointer;
   outline: none;
+
 }
 
 .search-container button:hover {
+
   background-color: #555;
+
 }
 
 .list {
@@ -182,27 +227,32 @@ h1 {
 }
 
 .welcome-message {
+
   background-image: url("sav.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 20px;
-  color: #000000; /* Set the text color to ensure readability */
-  position: relative; /* Required for overlay positioning */
+  color: #000000;
+  position: relative;
+
 }
 
 .welcome-message::before {
+
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.364); /* Adjust the opacity as needed */
-  z-index: -9; /* Push the overlay behind the text */
+  background-color: rgba(0, 0, 0, 0.364);
+  z-index: -9;
+
 }
 
 .welcome-message::after {
+
   content: "";
   position: absolute;
   top: 0;
@@ -213,29 +263,36 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(0.9); /* Adjust the brightness level */
-  z-index: -9; /* Push the dimmed image further behind */
+  filter: brightness(0.9);
+  z-index: -9;
+
 }
 
 .welcome-message h1 {
+
   font-size: 50px;
   color: darkgreen;
   margin-bottom: 20px;
+
 }
 
 .welcome-message h1::after {
+
   display: none;
 
 }
 
 .welcome-message p {
+
   font-size: 25px;
   color: #000000;
   margin-bottom: 10px;
   font-weight: bold;
+
 }
 
 .welcome-message a {
+
   color: red;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -246,45 +303,37 @@ h1 {
   box-shadow: 0px 0px 15px rgb(137, 0, 0);
   background-color: rgb(48, 48, 48);
   margin: 645px;
+
 }
 
 .welcome-message a:hover {
+
   color: #e64c4c;
+
 }
 
 @keyframes fadeIn {
+
   0% {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
+
 }
 
 .welcome-message {
-  animation: fadeIn 4s ease;
-}
 
-#chatAIPopup {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: green;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 17px;
-  cursor: pointer;
-  animation: bounce 1s infinite;
+  animation: fadeIn 4s ease;
+
 }
 
 @keyframes bounce {
+
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
@@ -294,6 +343,7 @@ h1 {
   60% {
     transform: translateY(-5px);
   }
+
 }
 
 
@@ -322,55 +372,69 @@ h1 {
   padding-top: 30px;
   color: black
 
-  }
+}
 
-  .cards-container {
-    position: relative;
-    overflow: hidden;
-    margin: 50px;
-    padding: 10px;
-  }
+.cards-container {
+
+  position: relative;
+  overflow: hidden;
+  margin: 50px;
+  padding: 10px;
+
+}
   
 
-  .scroll-button {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    z-index: 1;
-  }
-  
-  .scroll-left {
-    left: 0;
-  }
-  
-  .scroll-right {
-    right: 0;
-  }
+.scroll-button {
 
-  .cards {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 50px;
+  background-color: rgb(48, 48, 48);
+  color: green;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1;
+
+}
+  
+.scroll-left {
+
+  left: 0;
+
+}
+  
+.scroll-right {
+
+  right: 0;
+
+}
+
+.cards {
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+
   }
   
-  .cards::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Opera */
-  }
+.cards::-webkit-scrollbar {
+
+  display: none; /* Chrome, Safari, and Opera */
+
+}
 
 .card-list {
 
@@ -403,7 +467,7 @@ h1 {
   background-color: rgba(0,0,0,0.4);
   cursor: pointer;
 
-  }
+}
 
 .popup-content {
 
@@ -414,7 +478,7 @@ h1 {
   width: 80%;
   max-width: 600px;
 
-  }
+}
 
 .popup-content h2 {
 
@@ -450,7 +514,7 @@ input {
   font-size: 50px;
   font-weight: bold;
 
-  }
+}
 
 .close:hover,
 .close:focus {
@@ -459,33 +523,40 @@ input {
   text-decoration: none;
   cursor: pointer;
 
-  }
+}
 
 
-  a.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    font-size: 18px;
-    background-color: rgb(195, 248, 195);
-    color: black;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    z-index: 999;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
+a.back-to-top {
+
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 18px;
+  background-color: rgb(195, 248, 195);
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
   
-  a.back-to-top.show {
+a.back-to-top.show {
+
     opacity: 1;
-  }
+
+}
   
-  a.back-to-top:hover {
+a.back-to-top:hover {
+
     background-color: #555;
-  }
+
+}
 
 a[href="index.html"] {
+
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -495,15 +566,20 @@ a[href="index.html"] {
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
+
 }
 
 a[href="index.html"]:hover {
+
   background-color: #555;
+
 }
 
 #blog-section {
+
   background-color: #5b5b5bc4;
   padding: 20px;
+
 }
 
 #blog-section h2 {
@@ -511,15 +587,18 @@ a[href="index.html"]:hover {
   font-size: 50px;
   text-align: center;
   color: green;
+
 }
 
 .blog-post {
+
   background-color: #ffffff81;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
   margin-left: 465px;
   width: 500px;
+
 }
 
 #blog-section p {
@@ -527,80 +606,104 @@ a[href="index.html"]:hover {
   font-size: 15px;
   text-align: center;
   color: black;
+
 }
 
 .blog-title {
+
   font-size: 24px;
   color: #333;
   margin-bottom: 10px;
+
 }
 
 .blog-date, .blog-author {
+
   color: #666;
   font-size: 14px;
   margin-bottom: 5px;
+
 }
 
 .blog-excerpt {
+
   font-size: 16px;
   color: #555;
+
 }
 
 @media only screen and (max-width: 767px) {
+
   .app {
+
     display: flex;
     min-height: 100vh;
     
   }
 
   .search-container {
+
     position: relative;
-    margin-left: 10px;
+    margin-left: -20px;
+
   }
   
   .search-container input[type="text"] {
+
     padding: 10px 10px;
     border: none;
     border-radius: 4px;
     outline: none;
     font-size: 10px;
     width: 70px;
+
   }
   
   .search-container button {
+
     position: absolute;
     top: 0;
     right: 0;
-    padding: 10px;
+    padding: 16px;
     background-color: #ccc;
     border: none;
     border-radius: 3px;
     color: white;
     cursor: pointer;
     outline: none;
+
   }
   
   .search-container button:hover {
+
     background-color: #555;
+
   }
 
   .sidebar {
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     padding: 20px;
+
   }
 
   .menu-toggle {
+
     display: none;
+
   }
 
   body.sidebar-open {
+
     overflow: hidden;
+
   }
 
   .sidebar {
+
     flex: 1 1 0;
     width: 300px;
     padding: 2rem 1rem;
@@ -612,46 +715,60 @@ a[href="index.html"]:hover {
     left: -4px;
     top: 70vh;
     bottom: 0;
+
   }
 
   .sidebar.open {
+
     transform: translateX(0);
     overflow: hidden;
     position: fixed;
     height: 100vh;
+
   }
 
   .sidebar h3 {
+
     color: black;
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 0.5em;
+
   }
 
   .sidebar .menu {
+
     margin: 0 -1rem;
+
   }
 
   .sidebar .menu .menu-item {
+
     display: block;
     padding: 1em;
     color: black;
     text-decoration: none;
     transition: 0.2s linear;
+
   }
 
   .sidebar .menu .menu-item:hover,
   .sidebar .menu .menu-item.is-active {
+
     color: green;
     border-right: 5px solid green;
+
   }
 
   .content {
+
     flex: 1 1 0;
     padding: 2rem;
+
   }
 
   .menu-toggle {
+
     display: block;
     top: 2rem;
     z-index: 999;
@@ -663,9 +780,11 @@ a[href="index.html"]:hover {
     border-radius: 99px;
     background-color: white;
     cursor: pointer;
+
   }
 
   .menubar {
+
     position: fixed;
     top: 0;
     left: 0;
@@ -679,20 +798,23 @@ a[href="index.html"]:hover {
     height: 30vh;
     overflow: hidden;
     z-index: 1;
+
   }
 
-
   .hamburger {
+
     position: relative;
     top: calc(50% - 2px);
     left: 50%;
     transform: translate(-50%, -50%);
     width: 32px;
+
   }
 
   .hamburger > span,
   .hamburger > span::before,
   .hamburger > span::after {
+
     display: block;
     position: absolute;
     width: 100%;
@@ -700,46 +822,64 @@ a[href="index.html"]:hover {
     border-radius: 99px;
     background-color: green;
     transition-duration: .25s;
+
   }
 
   .hamburger > span::before {
+
     content: '';
     top: -8px;
     background-color: black;
+
   }
 
   .hamburger > span::after {
+
     content: '';
     top: 8px;
     background-color: black;
+
   }
 
   .menu-toggle.is-active .hamburger > span {
+
     transform: rotate(45deg);
+
   }
   .menu-toggle.is-active .hamburger > span::before {
+
     top: 0;
     transform: rotate(0deg);
+
   }
   .menu-toggle.is-active .hamburger > span::after {
+
     top: 0;
     transform: rotate(90deg);
+
   }
 
   .menu-item a {
+
     text-decoration: none;
     color: black;
+
   }
 
   .menu-item a:hover {
+
     color: black;
+
   }
 
   .menu {
+
     height: 85px;
+
   }
 
   #mobilemenu {
+
     display: flex;
     flex-direction: column;
     color: black;
@@ -749,6 +889,7 @@ a[href="index.html"]:hover {
     padding: 1em;
     text-decoration: none;
     transition: 0.2s linear;
+
   }
 
   .card {
@@ -776,55 +917,68 @@ a[href="index.html"]:hover {
     padding-top: 30px;
     color: black
   
-    }
+  }
   
-    .cards-container {
-      position: relative;
-      overflow: hidden;
-      margin: 30px;
-      padding: 50px;
-    }
+  .cards-container {
+
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    padding: 50px;
+
+  }
     
+  .scroll-button {
+
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 50px;
+    background-color: rgb(48, 48, 48);
+    color: green;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1;
+
+  }
+    
+  .scroll-left {
+
+    left: 0;
+
+  }
+    
+  .scroll-right {
+
+    right: 0;
+
+  }
   
-    .scroll-button {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      font-size: 24px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      z-index: 1;
-    }
+  .cards {
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+
+  }
     
-    .scroll-left {
-      left: 0;
-    }
-    
-    .scroll-right {
-      right: 0;
-    }
-  
-    .cards {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: flex-start;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none; /* IE and Edge */
-    }
-    
-    .cards::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, and Opera */
-    }
+  .cards::-webkit-scrollbar {
+
+    display: none; /* Chrome, Safari, and Opera */
+
+  }
   
   .card-list {
   
@@ -847,12 +1001,13 @@ a[href="index.html"]:hover {
   .logo {
 
     padding-left: -1em;
-    width: 223px;
+    width: 180px;
     float: left;
   
   }
   
   .popup {
+
     display: none;
     position: fixed;
     z-index: 1;
@@ -862,15 +1017,18 @@ a[href="index.html"]:hover {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+
   }
   
   .popup-content {
+
     background-color: rgb(195, 248, 195);
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     max-width: 300px;
+
   }
   
   .popup-content h2 {
@@ -907,7 +1065,7 @@ a[href="index.html"]:hover {
     font-size: 50px;
     font-weight: bold;
   
-    }
+  }
   
   .close:hover,
   .close:focus {
@@ -916,281 +1074,319 @@ a[href="index.html"]:hover {
     text-decoration: none;
     cursor: pointer;
   
-    }
+  }
 
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    
-    .content {
-      flex: 1;
-    }
+  body {
 
-    a[href="index.html"] {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      font-size: 13px;
-      background-color: rgb(195, 248, 195);
-      color: black;
-      padding: 10px 15px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    
-    a[href="index.html"]:hover {
-      background-color: #555;
-    }
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
-    .welcome-message {
-      text-align: center;
-      padding: 50px 20px;
-      background-color: #3b3b3b;
-    }
+  }
     
-    .welcome-message h1 {
-      font-size: 35px;
-      color: #000000;
-      margin-bottom: 20px;
-    }
-    
-    .welcome-message p {
-      font-size: 18px;
-      color: #000000;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    
-    .welcome-message a {
-      color: green;
-      font-weight: bold;
-      font-size: 30px;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    .welcome-message a:hover {
-      color: #e64c4c;
-    }
+  .content {
 
-    .chatbot {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 60px;
-      height: 60px;
-      background-color: green;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 12px;
-      cursor: pointer;
-      animation: bounce 1s infinite;
-    }
+    flex: 1;
 
-    a.back-to-top {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      font-size: 12px;
-      background-color: rgb(195, 248, 195);
-      color: black;
-      padding: 10px 15px;
-      border-radius: 5px;
-      text-decoration: none;
-      z-index: 999;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
+  }
+
+  a[href="index.html"] {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 13px;
+    background-color: rgb(195, 248, 195);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+
+  }
     
-    a.back-to-top.show {
-      opacity: 1;
-    }
+  a[href="index.html"]:hover {
+
+    background-color: #555;
     
-    a.back-to-top:hover {
-      background-color: #555;
-    }
+  }
+
+  .welcome-message {
+
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #3b3b3b;
+
+  }
     
-    footer {
+  .welcome-message h1 {
+
+    font-size: 35px;
+    color: #000000;
+    margin-bottom: 20px;
+
+  }
+    
+  .welcome-message p {
+
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+  }
+    
+  .welcome-message a {
+
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+  }
+    
+  .welcome-message a:hover {
+
+    color: #e64c4c;
+
+  }
+
+  a.back-to-top {
+
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 12px;
+    background-color: rgb(195, 248, 195);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+  }
+    
+  a.back-to-top.show {
+
+    opacity: 1;
+
+  }
+    
+  a.back-to-top:hover {
+
+    background-color: #555;
+
+  }
+    
+  footer {
+
       background-color: green;
       padding: 20px;
       text-align: center;
-    }
-    
-    .footer-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
 
-    .footer-logo1 img {
-      width: 90px;
-      height: auto;
-    }
+  }
     
-    .footer-logo img {
-      width: 110px;
-      height: auto;
-    }
+  .footer-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+
+  }
+
+  .footer-logo1 img {
+
+    width: 110px;
+    height: auto;
+
+  }
     
-    .footer-social {
-      flex: 1;
-      max-width: 200px;
-      margin: 0 20px;
-      font-size: 30px;
-    }
+  .footer-logo img {
+
+    width: 110px;
+    height: auto;
+
+  }
     
-    .footer-social h3 {
-      margin-bottom: 10px;
-      font-size: 23px;
-    }
+  .footer-social {
+
+    flex: 1;
+    max-width: 200px;
+    margin: 0 20px;
+    font-size: 30px;
+
+  }
     
-    .social-media {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
+  .footer-social h3 {
+
+    margin-bottom: 10px;
+    font-size: 23px;
+
+  }
     
-    .social-media li {
+  .social-media {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+  }
+    
+  .social-media li {
+
       margin: 0 5px;
-    }
+
+  }
     
-    .social-media a {
+  .social-media a {
+
       color: #333;
-    }
+
+  }
     
-    .footer-contact ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      font-size: 18px;
-    }
+  .footer-contact ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+
+  }
     
-    .footer-contact li {
+  .footer-contact li {
+
       margin-bottom: 5px;
-    }
+      
+  }
     
-    .footer-contact a {
-      color: #333;
-      text-decoration: none;
-    }
+  .footer-contact a {
+
+    color: #333;
+    text-decoration: none;
+
+  }
     
-    p {
-      margin-top: 10px;
-      font-size: 10px;
-    }
+  p {
 
-    #blog-section {
-  background-color: #5b5b5bc4;
-  padding: 20px;
-}
+    margin-top: 10px;
+    font-size: 10px;
 
-#blog-section h2 {
+  }
 
-  font-size: 35px;
-  text-align: center;
-  color: green;
-}
+  #blog-section {
 
-#blog-section h3 {
+    background-color: #5b5b5bc4;
+    padding: 20px;
 
-  font-size: 18px;
-  text-align: center;
-  color: green;
-}
+  }
 
-.blog-post {
-  background-color: #ffffff81;
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 20px;
-  margin-left: 45px;
-  width: 200px;
-}
+  #blog-section h2 {
 
-#blog-section p {
+    font-size: 35px;
+    text-align: center;
+    color: green;
 
-  font-size: 15px;
-  text-align: center;
-  color: black;
-}
+  }
 
-.blog-title {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
+  #blog-section h3 {
 
-.blog-excerpt {
-  font-size: 16px;
-  color: #555;
-}
+    font-size: 18px;
+    text-align: center;
+    color: green;
 
-.welcome-message {
-  height: 370px;
-}
+  }
 
-.welcome-message h1 {
-  font-size: 25px;
-  color: darkgreen;
-  margin-top: -10px;
-}
+  .blog-post {
 
-.welcome-message h1::after {
-  display: none;
+    background-color: #ffffff81;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    width: 200px;
 
-}
+  }
 
-.welcome-message p {
-  font-size: 15px;
-  color: green;
-  margin-bottom: 10px;
-  font-weight: bold;
-  border: 3px solid rgb(0, 73, 0);
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px green;
-  background-color: rgba(48, 48, 48, 0.875);
-}
+  #blog-section p {
 
-.welcome-message a {
-  color: red;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  text-align: center;
-  font-size: 20px;
-  border: 3px solid rgb(137, 0, 0);
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px rgb(137, 0, 0);
-  background-color: rgb(48, 48, 48);
-  margin: 0 auto;
-}
+    font-size: 15px;
+    text-align: center;
+    color: black;
 
-.welcome-message a:hover {
-  color: #e64c4c;
-}
+  }
 
-#chatAIPopup {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: green;
-  border-radius: 50%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 12px;
-  cursor: pointer;
-  animation: bounce 1s infinite;
-}
+  .blog-title {
+
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+
+  }
+
+  .blog-excerpt {
+
+    font-size: 16px;
+    color: #555;
+
+  }
+
+  .welcome-message {
+
+    height: 370px;
+
+  }
+
+  .welcome-message h1 {
+
+    font-size: 25px;
+    color: darkgreen;
+    margin-top: -10px;
+
+  }
+
+  .welcome-message h1::after {
+
+    display: none;
+
+  }
+
+  .welcome-message p {
+
+    font-size: 15px;
+    color: green;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border: 3px solid rgb(0, 73, 0);
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px green;
+    background-color: rgba(48, 48, 48, 0.875);
+
+  }
+
+  .welcome-message a {
+
+    color: red;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+    font-size: 20px;
+    border: 3px solid rgb(137, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(137, 0, 0);
+    background-color: rgb(48, 48, 48);
+    margin: 0 auto;
+
+  }
+
+  .welcome-message a:hover {
+
+    color: #e64c4c;
+
+  }
     
 }

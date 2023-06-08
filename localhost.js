@@ -153,11 +153,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // AirCav
-
-function openChatAI() {
-  document.getElementById("chatAIPopup").style.display = "block";
-}
-
-function closeChatAI() {
-  document.getElementById("chatAIPopup").style.display = "none";
-}
