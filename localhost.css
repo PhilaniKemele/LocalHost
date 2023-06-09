@@ -752,7 +752,7 @@ a[href="index.html"]:hover {
 
     position: relative;
     top: calc(50% - 2px);
-    left: 270%;
+    left: 240%;
     transform: translate(-50%, -50%);
     width: 32px;
 
