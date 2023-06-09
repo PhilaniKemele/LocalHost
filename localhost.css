@@ -1,6 +1,6 @@
 body {
 
-  background-color: rgb(48, 48, 48);
+  background-color: white;
   margin: 0;
   padding: 0;
   display: flex;
@@ -135,7 +135,7 @@ h1 {
 
 .menu {
 
-  background-color: green;
+  background-color: white;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -166,7 +166,7 @@ h1 {
 .logo {
 
   padding-left: -1em;
-  width: 280px;
+  width: 200px;
   float: left;
 
 }
@@ -674,23 +674,23 @@ a[href="index.html"]:hover {
     flex: 1 1 0;
     width: 300px;
     padding: 2rem 1rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(178, 254, 140);
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
     overflow-y: auto;
     position: fixed;
     left: -4px;
-    top: 70vh;
-    bottom: 0;
+    margin-top: 200px;
+    margin-bottom: -70px;
 
   }
 
   .sidebar.open {
 
     transform: translateX(0);
-    overflow: hidden;
+    overflow:hidden;
     position: fixed;
-    height: 100vh;
+    height: 50vh;
 
   }
 
@@ -772,7 +772,7 @@ a[href="index.html"]:hover {
 
     position: relative;
     top: calc(50% - 2px);
-    left: 50%;
+    left: 270%;
     transform: translate(-50%, -50%);
     width: 32px;
 
@@ -861,19 +861,7 @@ a[href="index.html"]:hover {
 
   .card {
 
-    background-color: rgb(195, 248, 195);
-    border: 7px solid green;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(105, 241, 0, 0.3);
-    margin: 20px;
-    width: 130px;
-    padding: 10px;
-    text-align: center;
-    font-size: 13px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: none;
   
   }
   
@@ -897,53 +885,13 @@ a[href="index.html"]:hover {
     
   .scroll-button {
 
-    position: absolute;
-    top: 80px;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 50px;
-    background-color: rgb(48, 48, 48);
-    color: green;
-    font-size: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    z-index: 1;
-
-  }
-    
-  .scroll-left {
-
-    left: 0;
-
-  }
-    
-  .scroll-right {
-
-    right: 0;
+    display: none;
 
   }
   
   .cards {
 
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-
-  }
-    
-  .cards::-webkit-scrollbar {
-
-    display: none; /* Chrome, Safari, and Opera */
+    display: none;
 
   }
   
@@ -968,7 +916,7 @@ a[href="index.html"]:hover {
   .logo {
 
     padding-left: -1em;
-    width: 180px;
+    width: 120px;
     float: left;
   
   }
@@ -1077,47 +1025,6 @@ a[href="index.html"]:hover {
     
   }
 
-  .welcome-message {
-
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #3b3b3b;
-
-  }
-    
-  .welcome-message h1 {
-
-    font-size: 35px;
-    color: #000000;
-    margin-bottom: 20px;
-
-  }
-    
-  .welcome-message p {
-
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 10px;
-    font-weight: bold;
-
-  }
-    
-  .welcome-message a {
-
-    color: green;
-    font-weight: bold;
-    font-size: 30px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-
-  }
-    
-  .welcome-message a:hover {
-
-    color: #e64c4c;
-
-  }
-
   a.back-to-top {
 
     position: fixed;
@@ -1149,9 +1056,12 @@ a[href="index.html"]:hover {
     
   footer {
 
-      background-color: green;
-      padding: 20px;
-      text-align: center;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid green;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 
   }
     
@@ -1191,6 +1101,7 @@ a[href="index.html"]:hover {
 
     margin-bottom: 10px;
     font-size: 23px;
+    color: green;
 
   }
     
@@ -1206,13 +1117,13 @@ a[href="index.html"]:hover {
     
   .social-media li {
 
-      margin: 0 5px;
+    margin: 0 5px;
 
   }
     
   .social-media a {
 
-      color: #333;
+    color: #333;
 
   }
     
@@ -1225,9 +1136,10 @@ a[href="index.html"]:hover {
 
   }
     
-  .footer-contact li {
+  .footer-contact li a {
 
-      margin-bottom: 5px;
+    margin-bottom: 5px;
+    color: green;
       
   }
     
@@ -1242,21 +1154,23 @@ a[href="index.html"]:hover {
 
     margin-top: 10px;
     font-size: 10px;
+    color: green;
 
   }
 
   #blog-section {
 
-    background-color: #5b5b5bc4;
-    padding: 20px;
+    background-color: white;
+    padding: 70px;
 
   }
 
   #blog-section h2 {
 
-    font-size: 35px;
+    font-size: 23px;
     text-align: center;
     color: green;
+    margin-top: -150px;
 
   }
 
@@ -1304,56 +1218,91 @@ a[href="index.html"]:hover {
 
   .welcome-message {
 
-    height: 370px;
-
+    background-image: url("sav.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: #000000;
+    position: relative;
+    height: 200px;
+    overflow:hidden;
+  
   }
-
+  
+  .welcome-message::before {
+  
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.364);
+    z-index: -9;
+  
+  }
+  
+  .welcome-message::after {
+  
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("sav.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+    z-index: -9;
+  
+  }
+  
   .welcome-message h1 {
-
-    font-size: 25px;
+  
+    font-size: 30px;
     color: darkgreen;
-    margin-top: -10px;
-
+    margin-bottom: 20px;
+  
   }
-
+  
   .welcome-message h1::after {
-
+  
     display: none;
-
+  
   }
-
+  
   .welcome-message p {
 
-    font-size: 15px;
-    color: green;
-    margin-bottom: 10px;
-    font-weight: bold;
-    border: 3px solid rgb(0, 73, 0);
-    border-radius: 5px;
-    box-shadow: 0px 0px 15px green;
-    background-color: rgba(48, 48, 48, 0.875);
-
+    display: none;
+  
   }
-
+  
   .welcome-message a {
 
-    color: red;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    text-align: center;
-    font-size: 20px;
-    border: 3px solid rgb(137, 0, 0);
-    border-radius: 5px;
-    box-shadow: 0px 0px 15px rgb(137, 0, 0);
-    background-color: rgb(48, 48, 48);
-    margin: 0 auto;
-
+    display: none;
+  
   }
 
-  .welcome-message a:hover {
+  .findaservice {
 
-    color: #e64c4c;
-
+    border: 3px solid green;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 25px;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
   }
     
 }
