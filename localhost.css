@@ -647,16 +647,6 @@ a[href="index.html"]:hover {
 
   }
 
-  .sidebar {
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding: 20px;
-
-  }
-
   .menu-toggle {
 
     display: none;
@@ -670,28 +660,18 @@ a[href="index.html"]:hover {
   }
 
   .sidebar {
-
-    flex: 1 1 0;
-    width: 300px;
-    padding: 2rem 1rem;
-    background-color: rgb(178, 254, 140);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-    overflow-y: auto;
     position: fixed;
-    left: -4px;
-    margin-top: 200px;
-    margin-bottom: -70px;
-
+    margin-top: 380px;
+    right: -300px;
+    width: 300px;
+    height: 50vh;
+    background-color: black;
+    z-index: 9999;
+    transition: right 0.3s ease-out;
   }
 
   .sidebar.open {
-
-    transform: translateX(0);
-    overflow:hidden;
-    position: fixed;
-    height: 50vh;
-
+    right: 0;
   }
 
   .sidebar h3 {
@@ -1167,7 +1147,7 @@ a[href="index.html"]:hover {
 
   #blog-section h2 {
 
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
     color: green;
     margin-top: -150px;
@@ -1176,43 +1156,17 @@ a[href="index.html"]:hover {
 
   #blog-section h3 {
 
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     color: green;
 
   }
 
-  .blog-post {
-
-    background-color: #ffffff81;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-left: 45px;
-    width: 200px;
-
-  }
-
   #blog-section p {
 
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     color: black;
-
-  }
-
-  .blog-title {
-
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-
-  }
-
-  .blog-excerpt {
-
-    font-size: 16px;
-    color: #555;
 
   }
 
@@ -1227,6 +1181,7 @@ a[href="index.html"]:hover {
     position: relative;
     height: 200px;
     overflow:hidden;
+    z-index: 1;
   
   }
   
@@ -1262,7 +1217,7 @@ a[href="index.html"]:hover {
   
   .welcome-message h1 {
   
-    font-size: 30px;
+    font-size: 23px;
     color: darkgreen;
     margin-bottom: 20px;
   
